@@ -8,4 +8,3 @@ You can learn about my Spring Framework 5 Online course [here.](https://go.sprin
 
 Test CircleCI integration
 
-One more test
