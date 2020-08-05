@@ -96,6 +96,9 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
         recipe.setDescription("Perfect Guacamole");
         recipe.setPrepTime(10);
         recipe.setCookTime(0);
+        recipe.setUrl("www.12345.de");
+        recipe.setSource("30");
+        recipe.setServings(22);
         recipe.setDifficulty(Difficulty.EASY);
         recipe.setDirections("1. ...\n2. ...");
 
@@ -105,7 +108,7 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
 
         recipe.addIngredient(new Ingredient("First", new BigDecimal(2), eachUom));
         recipe.addIngredient(new Ingredient("Second", new BigDecimal(5), teaspoonUom));
-        recipe.addIngredient(new Ingredient("Second", new BigDecimal(2),tablespoonUom));
+        recipe.addIngredient(new Ingredient("Third", new BigDecimal(2),tablespoonUom));
 
         recipe.getCategories().add(americanCategory);
         recipe.getCategories().add(mexicanCategory);
